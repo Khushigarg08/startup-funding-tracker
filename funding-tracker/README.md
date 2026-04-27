@@ -1,11 +1,3 @@
----
-> **Note from me:** I'm a 2nd year Aerospace student at IIT Bombay 
-> who got into data through ML research projects. This is my first 
-> complete data pipeline — I learned scraping, dual databases, and 
-> ML deployment while building it. My actual notes and problems I 
-> faced are in dev_log.md if you want to see how I approached things.
----
-
 # 🚀 Indian Startup Funding Intelligence Tool
 > Automatically tracks newly funded Indian startups as B2B leads
 
