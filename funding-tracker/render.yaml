@@ -1,0 +1,49 @@
+services:
+  - type: pserv
+    name: funding-tracker-postgres
+    plan: free
+    env: postgres
+
+  - type: web
+    name: funding-tracker-backend
+    env: node
+    plan: free
+    buildCommand: cd backend && npm install
+    startCommand: node backend/server.js
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: DB_HOST
+        fromDatabase:
+          name: funding-tracker-postgres
+          property: host
+      - key: DB_PORT
+        fromDatabase:
+          name: funding-tracker-postgres
+          property: port
+      - key: DB_NAME
+        fromDatabase:
+          name: funding-tracker-postgres
+          property: database
+      - key: DB_USER
+        fromDatabase:
+          name: funding-tracker-postgres
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: funding-tracker-postgres
+          property: password
+      # MongoDB Atlas free tier recommended for cloud deployment.
+      # Set MONGO_URI to your Atlas connection string.
+      - key: MONGO_URI
+        value: mongodb://localhost:27017
+
+  - type: static
+    name: funding-tracker-frontend
+    env: static
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: frontend/build
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://funding-tracker-backend.onrender.com/api
+
