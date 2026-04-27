@@ -110,8 +110,8 @@ funding-tracker/
 ### 1. Clone repository
 
 ```bash
-git clone <your-repo-url>
-cd funding-tracker
+git clone https://github.com/Khushigarg08/startup-funding-tracker.git
+cd startup-funding-tracker/funding-tracker
 ```
 
 ### 2. Setup Python environment
