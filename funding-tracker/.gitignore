@@ -1,4 +1,6 @@
-echo .env > .gitignore
-echo __pycache__/ >> .gitignore
-echo node_modules/ >> .gitignore
-echo *.pyc >> .gitignore
+.env
+commit_history.md
+scraper/data/
+__pycache__/
+*.pyc
+node_modules/
