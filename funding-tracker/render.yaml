@@ -44,6 +44,9 @@ services:
     buildCommand: cd frontend && npm install && npm run build
     staticPublishPath: frontend/build
     envVars:
+      # CRA + react-scripts is much happier on Node LTS than Node 24
+      - key: NODE_VERSION
+        value: 18.20.2
       - key: REACT_APP_API_URL
         value: https://funding-tracker-backend.onrender.com/api
 
