@@ -2,8 +2,8 @@
 > Automatically tracks newly funded Indian startups as B2B leads
 
 ## 🌐 Live Demo
-- **Dashboard:** https://funding-tracker-frontend.onrender.com
-- **API:** https://funding-tracker-backend.onrender.com/api/health
+- **Dashboard:** https://startup-funding-tracker-frontend.onrender.com
+- **API:** https://startup-funding-tracker-backend.onrender.com/api/health
 
 ## 📌 Problem Statement
 
