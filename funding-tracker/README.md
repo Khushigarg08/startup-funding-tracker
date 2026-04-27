@@ -1,6 +1,10 @@
 # 🚀 Indian Startup Funding Intelligence Tool
 > Automatically tracks newly funded Indian startups as B2B leads
 
+## 🌐 Live Demo
+- **Dashboard:** https://funding-tracker-frontend.onrender.com
+- **API:** https://funding-tracker-backend.onrender.com/api/health
+
 ## 📌 Problem Statement
 
 Businesses (SaaS companies, agencies, recruiters) need to identify newly funded Indian startups as high-intent leads. This tool automatically scrapes, cleans, stores, scores, and serves Indian startup funding announcements from YourStory and Inc42 in a searchable React dashboard.
